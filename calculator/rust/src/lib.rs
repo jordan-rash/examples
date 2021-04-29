@@ -25,7 +25,7 @@ fn test_body(msg: httpserver::Request) -> HandlerResult<httpserver::Response> {
                 ret = format!("subtract: {} - {} = {}", nums[0], nums[1], sub);
                 break;
             }
-            // TODO: add multiply capabilities
+            // TODO: add multiplication
             "/div" => {
                 if nums[1] == "0" {
                     ret = String::from("Can not divide by zero!");
